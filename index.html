@@ -368,7 +368,8 @@
     $().ready(function(){
         $.ajax({
             url: "http://webserv-compprod.rhcloud.com/blogs/index.json",
-            headers: {"servPassword": "tmusk"},
+            headers: {"servPassword": "tmusk",'Access-Control-Allow-Origin': '*' },
+            crossDomain: true,
             success: function (data) {
                 console.log("00000000000000000000000============"+data)
             }
