@@ -365,18 +365,6 @@
 
     });
 
-    $().ready(function(){
-        $.ajax({
-            url: "http://webserv-compprod.rhcloud.com/blogs/index.json",
-            headers: {"servPassword": "tmusk","Access-Control-Allow-Origin" : "*",
-                "Access-Control-Allow-Methods" : "GET,POST,PUT,DELETE,OPTIONS",
-                "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With" },
-            crossDomain: true,
-            success: function (data) {
-                console.log("00000000000000000000000============"+data)
-            }
-        })
-    })
 
 
 </script>
