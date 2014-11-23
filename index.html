@@ -362,14 +362,18 @@
                 }
             }
         });
+
+    });
+
+    $().ready(function(){
         $.ajax({
             url: "http://webserv-compprod.rhcloud.com/blogs/index.json",
             headers: {"servPassword": "tmusk"},
             success: function (data) {
-                alert(data)
+                console.log("00000000000000000000000============"+data)
             }
         })
-    });
+    })
 
 
 </script>
